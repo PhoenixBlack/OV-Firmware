@@ -5,9 +5,16 @@
 // SHUTTLE DATA
 //
 // OV-101
-//				DRY MASS	MAX MASS	RET MASS	ASC MASS	LAND MASS	PAYLOAD
-//	Ground test	18,704 kg	32,704 kg	32,704 kg	--,--- kg	--,--- kg	14,000 kg
-//	STS-1		18,752 kg	34,000 kg	32,704 kg	33,443 kg	--,--- kg	13,952 kg
+//				[DRY MASS]	[ASC MAX]	[RET MAX]	[ASC LOAD]	[LAND LOAD]	ASC MASS	RET MASS
+//	Ground test	18,704 kg	32,704 kg	32,704 kg	14,000 kg	14,000 kg	--,--- kg	--,--- kg
+//	STS-1		18,752 kg	32,704 kg	32,704 kg	14,000 kg	13,952 kg	28,388 kg	26,026 kg
+//	STS-2		18,752 kg	34,000 kg	32,704 kg	15,248 kg	13,952 kg	33,443 kg	--,--- kg
+//
+//	DRY MASS:			18,752 kg
+//	MAX LAUNCH MASS:	34,000 kg
+//	MAX LAND MASS:		32,704 kg
+//	MAX LAUNCH PAYLOD:	15,248 kg
+//	MAX LAND PAYLOAD:	13,952 kg
 //
 //	MAX G:		-2.0 .. 4.0 g
 //	MAX Q:		21.0 kPA
