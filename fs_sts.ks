@@ -10,12 +10,13 @@
 //
 //
 // OV-101	
-//			DRY MASS	ASC MASS	RET MASS
+//			DRY MASS	ASC MASS	RET MASS	CS RESIDUAL
 //	STS-1	18,752 kg	28,388 kg	26,026 kg
 //	STS-2	18,752 kg	33,513 kg	20,775 kg
 //	STS-3	18,752 kg	34,514 kg	23,780 kg
 //	STS-4	18,752 kg	33,364 kg	21,524 kg
 //	STS-5	18,752 kg	34,339 kg	22,400 kg
+//	STS-6	18,752 kg	37,469 kg	23,108 kg	
 //
 //	DRY MASS:	18,752 kg
 //	MAX MASS:	38,100 kg (launch)		32,704 kg (return)
@@ -44,6 +45,7 @@
 //		STS-3	+114 m/s	+1212 m
 //		STS-4	+134 m/s	+1921 m
 //		STS-5	+105 m/s	+933 m
+//		STS-6	+120 m/s	+231 m
 //
 //
 // ENTRY CENTER OF MASS BALLANCE:
