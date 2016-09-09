@@ -16,18 +16,17 @@
 //	- AUTOMATICALLY DETERMINE ANGLES OF THE DOCKING PORT
 //	- ADD GUIDANCE THRESHOLDS: EMERGENCY THRESHOLDS FOR ASCENT ANGLE, REENTRY ANGLES
 //	- ADD TELEMETERING OF ALPHA, BETA, BODY ANGLES
-//	- EASE IN/OUT OF ROLL REVERSAL
 //
 //
 // OV-101
 //	DRY MASS:	18,911 kg
-//	MAX MASS:	42,620 kg (launch)		32,704 kg (return)
-//	MAX PAYLOD:	23,709 kg (launch)		13,793 kg (return)
+//	MAX MASS:	45,150 kg (launch)		32,704 kg (return)
+//	MAX PAYLOD:	26,239 kg (launch)		13,793 kg (return)
 //
 // OV-102
 //	DRY MASS:	17,245 kg
-//	MAX MASS:	42,620 kg (launch)		32,704 kg (return)
-//	MAX PAYLOD:	25,375 kg (launch)		15,459 kg (return)
+//	MAX MASS:	45,150 kg (launch)		32,704 kg (return)
+//	MAX PAYLOD:	27,905 kg (launch)		15,459 kg (return)
 //
 // ALL VEHICLES
 //

@@ -161,5 +161,5 @@ UNTIL FALSE {
 	
 	// WRITE DELAY
 	//WAIT 0.0.
-	WAIT 0.5.
+	WAIT 1.0.
 }
