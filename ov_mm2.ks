@@ -204,12 +204,7 @@ FUNCTION MM2_UI_TASK { PARAMETER DT.
 
 FUNCTION MM2_COMMAND {
 	PARAMETER VERB, VALUE.
-	
-	// LOAD PARAMETERS
 
-	GLOBAL HOLD_ATT				TO GET_PVAR("HOLD_ATT", 0).
-	GLOBAL HOLD_VEL				TO GET_PVAR("HOLD_VEL", 0).
-	
 	IF VERB = 1 {
 		IF MINOR_MODE = 7 {
 			// V1 SET APPROACH NUMERICAL SENSITIVITY
@@ -277,8 +272,8 @@ FUNCTION MM2_COMMAND {
 }
 
 
-////////////////////////////////////////////////////////////////////////////////
-// MAJOR MODE 9
+
+
 ////////////////////////////////////////////////////////////////////////////////
 MODE_NAMES:ADD(20, "ORBIT MONITOR   ").
 MODE_NAMES:ADD(21, "LOW-POWER MODE  ").

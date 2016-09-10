@@ -189,6 +189,9 @@ FUNCTION MM1_ABORT_TASK { PARAMETER DT.
 }.
 
 FUNCTION MM1_UI_LO_TASK { PARAMETER DT.
+	IF DT = INIT {
+		HORIZ_LINE(0, 29, 13).
+	}
 	TASK_SCHEDULE(5, MM1_UI_LO_TASK@).
 	
 	// GUIDANCE
@@ -249,8 +252,8 @@ FUNCTION MM1_COMMAND {
 }
 
 
-////////////////////////////////////////////////////////////////////////////////
-// MAJOR MODE 9
+
+
 ////////////////////////////////////////////////////////////////////////////////
 MODE_NAMES:ADD(10, "PRE-LAUNCH HOLD ").
 MODE_NAMES:ADD(11, "ENGINE CHECK    ").
@@ -262,6 +265,8 @@ MODE_NAMES:ADD(16, "!!STAGE SEPAR!!!").
 MODE_NAMES:ADD(17, "CLOSED LOOP ST2 ").
 MODE_NAMES:ADD(18, "ET COAST PHASE  ").
 MODE_NAMES:ADD(19, "ET SEPARATION   ").
+
+VERB_NAMES:ADD(19, "PROCEED WITH LAUNCH").
 
 MODE_ENTER		(1, MM1_ENTER@).
 MODE_TRANSFER	(1, MM1_TRANSFER@).
