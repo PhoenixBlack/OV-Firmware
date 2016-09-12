@@ -2,8 +2,10 @@ local index = 1
 while true do
 	local mads = io.open("data"..index..".mds", "r")
 	if not mads then return end
+	print("\nReading MADS data block "..index)
 	
 	-- Start parsing out data
+	Defined = {}
 	Name = {}
 	Data = {}
 	CurrentRow = {}
@@ -21,6 +23,11 @@ while true do
 			if ItemID >= 0 then
 				Name[ItemID] = ItemName
 			end
+			
+			if not Defined[ItemID] then
+				print("Item found: "..ItemID.." ("..ItemName..")")
+				Defined[ItemID] = true
+			end
 		else
 			local ItemID = string.byte(cmd)-58
 			local ItemValue = mads:read("*n") or 0
@@ -33,8 +40,6 @@ while true do
 			end			
 			if ItemID+1 > NumItems then NumItems = ItemID+1 end
 			
-			print("ItemID", ItemID, "ItemValue", ItemValue)
-			
 			if (ItemID == 0) or (CurrentRow[ItemID]) then -- Time data, add a new row
 				LastTime = ItemValue
 
@@ -43,6 +48,11 @@ while true do
 				CurrentRow[0] = LastTime
 			end
 			CurrentRow[ItemID] = ItemValue
+			
+			if not Defined[ItemID] then
+				print("Item found: "..ItemID.." (unknown)")
+				Defined[ItemID] = true
+			end
 		end		
 	end
 	
